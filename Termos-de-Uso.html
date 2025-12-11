@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robux Elite - Termos de Uso</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gold: #FFD700;
+            --premium-purple: #8A2BE2;
+            --vip-blue: #4169E1;
+            --dark-bg: #0F1525;
+            --card-bg: #1A233A;
+            --text-light: #E0E0E0;
+        }
+        * {margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat','Segoe UI',sans-serif;}
+        body {background:var(--dark-bg);color:var(--text-light);min-height:100vh;overflow-x:hidden;position:relative;}
+        .snowflakes {position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1;}
+        .snowflake {position:absolute;top:-10px;color:white;font-size:1em;animation:fall linear forwards;user-select:none;}
+        @keyframes fall {to {transform: translateY(100vh) rotate(360deg);}}
+        header {background:rgba(15,21,37,0.95);padding:20px 0;box-shadow:0 5px 30px rgba(0,0,0,0.5);transition:all 0.4s ease;position:relative;z-index:1000;}
+        .container {width:90%;max-width:700px;margin:0 auto;}
+        .header-content {display:flex;justify-content:center;align-items:center;}
+        .logo {display:flex;align-items:center;gap:15px;}
+        .logo-icon {font-size:2.5rem;background:linear-gradient(135deg,var(--primary-gold),var(--premium-purple));-webkit-background-clip:text;background-clip:text;color:transparent;}
+        .logo-text {font-size:1.8rem;font-weight:800;background:linear-gradient(to right,var(--primary-gold),var(--vip-blue));-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 20px rgba(255,215,0,0.3);}
+        .terms-hero {
+            padding: 110px 0 40px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        .terms-hero h1 {
+            font-size: 2.3rem;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, var(--primary-gold), var(--vip-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .terms-hero p {
+            font-size: 1.15rem;
+            max-width: 520px;
+            margin: 0 auto 38px;
+            color: #B0B0B0;
+            line-height: 1.65;
+        }
+        .back-btn-wrapper {
+            margin-top: 18px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--primary-gold), var(--vip-blue));
+            color: #ffffff;
+            border: none;
+            border-radius: 28px;
+            font-size: 1.02rem;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 10px 24px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 2px 6px rgba(65,105,225,0.2);
+        }
+        .back-btn:hover {
+            background: linear-gradient(135deg, var(--vip-blue), var(--primary-gold));
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        .terms-section {
+            margin: 30px 0 60px 0;
+            position: relative;
+            z-index: 2;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.16);
+            padding: 38px 30px;
+        }
+        .terms-title {font-size:1.65rem;margin-bottom:26px;text-align:left;background:linear-gradient(to right,var(--primary-gold),var(--vip-blue));-webkit-background-clip:text;background-clip:text;color:transparent;}
+        .terms-section h2 {
+            color: var(--primary-gold);
+            font-size: 1.25rem;
+            margin-top:28px;
+            margin-bottom:7px;
+        }
+        .terms-section p {
+            color: #CFCFCF;
+            font-size: 1.05rem;
+            margin-bottom:22px;
+            line-height:1.7;
+        }
+        footer {background:#0A0F1C;padding:40px 0 24px;position:relative;z-index:2;}
+        .footer-content {text-align:center;}
+        .footer-logo {font-size:1.3rem;color:var(--primary-gold);font-weight:700;}
+        .footer-note {color:#B0B0B0;margin-top:18px;font-size:1.03rem;}
+        .copyright {text-align:center;padding-top:22px;color:#777;font-size:0.9rem;border-top:1px solid rgba(255,255,255,0.05);}
+        @media (max-width: 700px) {
+            .container {width:97%;}
+            .terms-section {padding:28px 12px;}
+            .terms-hero h1 {font-size:1.38rem;}
+        }
+    </style>
+</head>
+<body>
+    <div class="snowflakes" id="snowflakes"></div>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fas fa-crown"></i></div>
+                    <div class="logo-text">RobuxElite</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="terms-hero">
+        <div class="container">
+            <div class="back-btn-wrapper">
+                <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Voltar</a>
+            </div>
+            <h1><i class="fas fa-file-contract"></i> Termos de Uso</h1>
+            <p>
+                Leia cuidadosamente os termos abaixo antes de utilizar a plataforma RobuxElite ou realizar qualquer compra.
+            </p>
+        </div>
+    </section>
+    <section class="terms-section">
+        <div class="terms-title"><i class="fas fa-book"></i> Regras e Condições de Uso</div>
+        <h2>1. Aceitação dos Termos</h2>
+        <p>
+            Ao acessar ou utilizar a RobuxElite, você concorda com todos os termos e condições descritos nesta página.
+        </p>
+        <h2>2. Usuário e Responsabilidade</h2>
+        <p>
+            Para utilizar nossos serviços, o usuário deve fornecer informações corretas e verídicas, sendo responsável por qualquer dado fornecido.
+        </p>
+        <h2>3. Produtos e Entrega</h2>
+        <p>
+            Os Robux adquiridos são entregues conforme especificado no momento da compra. O prazo depende do pagamento escolhido, e normalmente é instantâneo.
+        </p>
+        <h2>4. Pagamento</h2>
+        <p>
+            Aceitamos pagamentos via Pix, cartão, boleto e carteiras digitais. Confirmações de pagamento podem passar por verificação de segurança adicional.
+        </p>
+        <h2>5. Regras de Reembolso</h2>
+        <p>
+            Reembolsos são realizados quando não for possível completar a entrega dos Robux. Mudanças de decisão após a entrega não garantem reembolso.
+        </p>
+        <h2>6. Privacidade</h2>
+        <p>
+            Ao usar o site, o usuário aceita nossa Política de Privacidade. Consulte a página específica para saber mais.
+        </p>
+        <h2>7. Proibições</h2>
+        <p>
+            É proibida a utilização da plataforma para atividades ilegais ou que infrinjam regras da Roblox Corporation. Se detectado abuso, o acesso será bloqueado.
+        </p>
+        <h2>8. Alterações nos Termos</h2>
+        <p>
+            Estes termos podem ser modificados a qualquer momento sem aviso prévio. A versão atual estará sempre publicada nesta página.
+        </p>
+        <h2>9. Suporte</h2>
+        <p>
+            Para dúvidas e solicitações, entre em contato pelo e-mail <strong>contato@robuxelite.com</strong>.
+        </p>
+    </section>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">RobuxElite</div>
+            <div class="footer-note">
+                Entre em contato: <strong>contato@robuxelite.com</strong><br>
+                WhatsApp: <strong>(11) 99999-9999</strong>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 RobuxElite. Todos os direitos reservados.
+        </div>
+    </footer>
+    <script>
+        function createSnowflakes() {
+            const snowflakesContainer = document.getElementById('snowflakes');
+            const snowflakeCount = 40;
+            const snowflakeSymbols = ['❄', '❅', '❆', '•'];
+            for (let i = 0; i < snowflakeCount; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                const randomSymbol = snowflakeSymbols[Math.floor(Math.random() * snowflakeSymbols.length)];
+                snowflake.innerHTML = randomSymbol;
+                snowflake.style.left = Math.random() * 100 + 'vw';
+                const size = Math.random() * 1.5 + 0.5;
+                snowflake.style.fontSize = size + 'em';
+                const opacity = Math.random() * 0.7 + 0.3;
+                snowflake.style.opacity = opacity;
+                const duration = Math.random() * 10 + 5;
+                const delay = Math.random() * 5;
+                snowflake.style.animationDuration = duration + 's';
+                snowflake.style.animationDelay = delay + 's';
+                snowflakesContainer.appendChild(snowflake);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            createSnowflakes();
+        });
+    </script>
+</body>
+</html>
